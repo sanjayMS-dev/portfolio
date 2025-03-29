@@ -38,3 +38,5 @@ tabs.forEach(tab =>{
         tab.classList.add('qualification_active')
     })
 })
+
+
