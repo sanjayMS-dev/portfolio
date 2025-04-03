@@ -492,53 +492,57 @@
             </div>
         </section>
 
-        <!--Contact section-->
-        <section class="contact section" id="contact">
-            <h2 class="section_title">Contact Me</h2>
-            <span class="section_subtitle">Get in touch</span>
+        <!-- Contact section -->
+<section class="contact section" id="contact">
+    <h2 class="section_title">Contact Me</h2>
+    <span class="section_subtitle">Get in touch</span>
 
-            <div class="contact_container container grid">
+    <div class="contact_container container grid">
+        <div>
+            <div class="contact_information">
+                <i class="uil uil-envelope contact_icon"></i>
+
                 <div>
-                    <div class="contact_information">
-                        <i class="uil uil-envelope contact_icon"></i>
+                    <h3 class="contact_title">Email Me</h3>
+                    <span class="contact_subtitle">sanjay.msns.offical.in@gmail.com</span>
+                </div>
+            </div>
+        </div>
 
-                        <div>
-                            <h3 class="contact_title">Email Me</h3>
-                            <span class="contact_subtitle">sanjay.msns.offical.in@gmail.com</span>
-                        </div>
-                    </div>
+        <form id="contact-form" class="contact_form grid">
+            <div class="contact_inputs grid">
+                <div class="contact_content">
+                    <label for="name" class="contact_label">Name</label>
+                    <input type="text" id="name" class="contact_input" required>
                 </div>
 
-                <form action="" class="contact_form grid">
-                    <div class="contact_inputs grid">
-                        <div class="contact_content">
-                            <label for="" class="contact_label">Name</label>
-                            <input type="text" class="contact_input">
-                        </div>
-
-                        <div class="contact_content">
-                            <label for="" class="contact_label">Email</label>
-                            <input type="email" class="contact_input">
-                        </div>
-                    </div>
-                    <div class="contact_content">
-                        <label for="" class="contact_label">Project</label>
-                        <input type="text" class="contact_input">
-                    </div>
-                    <div class="contact_content">
-                        <label for="" class="contact_label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
-                    </div>
-
-                    <div>
-                        <a href="" class="btn" id="buttun_td">
-                            Send Message
-                            <i class="uil uil-message button_icon"></i>
-                        </a>
-                    </div>
-                </form>
+                <div class="contact_content">
+                    <label for="email" class="contact_label">Email</label>
+                    <input type="email" id="email" class="contact_input" required>
+                </div>
             </div>
-        </section>
+            <div class="contact_content">
+                <label for="project" class="contact_label">Project</label>
+                <input type="text" id="project" class="contact_input" required>
+            </div>
+            <div class="contact_content">
+                <label for="message" class="contact_label">Message</label>
+                <textarea id="message" cols="0" rows="7" class="contact_input" required></textarea>
+            </div>
+
+            <div>
+                <button type="submit" class="btn">
+                    Send Message
+                    <i class="uil uil-message button_icon"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Include Email.js Library -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="script.js"></script>
 
         <!--footer section-->
         
