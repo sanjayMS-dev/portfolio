@@ -39,4 +39,32 @@ tabs.forEach(tab =>{
     })
 })
 
+document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("TrGGdV4vTdHlshhgX"); 
+
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      emailjs
+        .send("service_r0t52jk","template_4bkyukn",  {
+          from_name: document.getElementById("name").value,
+          from_email: document.getElementById("email").value,
+          project: document.getElementById("project").value,
+          message: document.getElementById("message").value,
+        })
+        .then(
+          function (response) {
+            alert("Message sent successfully! ✅");
+            document.getElementById("contact-form").reset(); 
+          },
+          function (error) {
+            alert("Failed to send message. ❌ Please try again.");
+            console.log("Error:", error);
+          }
+        );
+    });
+});
+
 
